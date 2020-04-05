@@ -1,0 +1,50 @@
+{
+    "name": "vscode-markdown-tinymind",
+    "version": "0.1.0",
+    "displayName": "TinyMind for Markdown",
+    "description": "MindMap plugin for VS Code's built-in markdown preview.",
+    "keywords": [
+        "markdown",
+        "mindmap",
+        "tinymind"
+    ],
+    "icon": "logo/logox128.png",
+    "publisher": "qiqiworld",
+    "author": "qiqiworld <1354092549@qq.com>",
+    "license": "MIT",
+    "activationEvents": [],
+    "main": "./out/extension",
+    "repository": {
+        "url": "https://github.com/1354092549/vscode-markdown-tinymind.git"
+    },
+    "bugs": {
+        "url": "https://github.com/1354092549/vscode-markdown-tinymind/issues"
+    },
+    "engines": {
+        "vscode": "^1.15.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "contributes": {
+        "markdown.previewStyles": [
+            "./tinymind.css"
+        ],
+        "markdown.markdownItPlugins": true
+    },
+    "devDependencies": {
+        "@types/markdown-it": "0.0.9",
+        "@types/node": "^13.11.0",
+        "@types/vscode": "^1.43.0",
+        "markdown-it": "^10.0.0",
+        "typescript": "^3.8.3"
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./"
+    },
+    "dependencies": {
+        "markdown-it-tinymind": "^0.1.3"
+    }
+}
