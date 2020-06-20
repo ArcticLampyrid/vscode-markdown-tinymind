@@ -28,7 +28,7 @@
     ],
     "contributes": {
         "markdown.previewStyles": [
-            "./tinymind.css"
+            "./node_modules/markdown-it-tinymind/css/tinymind.css"
         ],
         "markdown.markdownItPlugins": true
     },
